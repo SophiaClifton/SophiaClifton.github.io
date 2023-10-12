@@ -1,0 +1,280 @@
+  /* Start Main Menu */
+  ul {
+    position: fixed;
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    width: 100%; 
+    z-index: 3; 
+    transition: top 0.3s; 
+  }
+  
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #9370db;
+  }
+
+  /* Drop Down Menu */
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    transform: translateX(-10%); 
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 3; 
+    
+}
+/* Dropdown content when hovering */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  /* End Drop Down Menu */
+  /* End Main Menu */
+
+
+  /* Banner Image */
+.banner-image {
+    background-image: url('images/PORT8.jpg'); 
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 40vh; 
+    z-index: -1;
+  }
+/* End Banner Image */
+
+/* Banner */
+.info {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: relative;
+    top: 120px; 
+  }
+  
+  .info h1 {
+    font-size: 36px;
+    color: #333;
+  }
+/* End Banner */
+
+/* Artworks section */
+#Artworks {
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+    padding: 20px;
+    position: relative;
+    top: 200px; 
+  }
+  
+  #Artworks h1 {
+    font-size: 26px;
+    color: #333;
+  }
+
+  #Sketches {
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+    padding: 20px;
+    position: relative;
+    top: 250px;
+  }
+  
+  #Sketches h1 {
+    font-size: 26px;
+    color: #333;
+  }
+
+  #Assets {
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+    padding: 20px;
+    position: relative;
+    top: 270px;
+  }
+  
+  #Assets h1 {
+    font-size: 26px;
+    color: #333;
+  }
+
+  #Games {
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+    padding: 20px;
+    position: relative;
+    top: 300px;
+  }
+  
+  #Games h1 {
+    font-size: 26px;
+    color: #333;
+  }
+
+  #About {
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+    padding: 20px;
+    position: relative;
+    top: 300px;
+  }
+  
+  #About h1 {
+    font-size: 26px;
+    color: #333;
+  }
+  
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+  }
+  
+  .image-gallery img {
+    max-width: 100%;
+    max-height: 300px;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 5px;
+  }
+
+  /* Hover effect for the gallery images */
+  .image-gallery img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  
+  /* Styles for the overlay */
+  #overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    overflow:auto;
+    cursor:pointer;
+  }
+  
+  #image-container {
+    display: inline-block;
+    max-width: 90%;
+    max-height: 80%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent; 
+    padding: 10px; 
+  }
+  
+  #enlarged-image {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  #close-button {
+    position: absolute;
+    top: 10px;
+    right: -30px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+  }
+/* Close button is visible when overlay is scrollable */
+  #close-button.z-index {
+    z-index: 3;
+  }
+  
+/* End Artworks section */
+
+  .artworks-container {
+    text-align: center;
+}
+/* STRAT GAME SECTION  */
+
+.image-description {
+  display: flex;
+}
+
+.image-galleryGames {
+  flex: 1;
+  position:relative;
+  overflow:hidden;
+  transition: opacity 0.5s; 
+}
+
+.description {
+  text-align: left;
+  font-size: 20px;
+  padding-top: 50px;
+  flex: 1;
+  opacity: 0.5;
+  transition: opacity 0.5s; 
+  padding-right: 100px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.image-description:hover .image-gallery {
+  opacity: 0.5;
+}
+
+.image-description:hover .description {
+  opacity: 1;
+}
+.game-image {
+  padding-top: 50px; 
+  max-width: 400px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .image-description {
+    flex-direction: column; 
+  }
+}
+
+/* The game links */
+.game-link {
+  text-decoration: none;
+  color: purple; 
+  transition: color 0.3s; 
+}
+
+.game-link:hover {
+  color: #9370db; 
+}
+
+
+
+.About-image img {
+  gap: 20px; 
+  max-width: 100%;
+  max-height: 300px;
+  height: auto;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
