@@ -206,9 +206,7 @@
   }
 
   @media (max-width: 768px) {
-    #image-container {
-        position: static; 
-    }
+    
 
     #close-button {
         position: static; 
