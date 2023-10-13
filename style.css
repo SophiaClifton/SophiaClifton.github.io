@@ -206,8 +206,14 @@
   }
 
   @media (max-width: 768px) {
-    
 
+    #enlarged-image {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%; 
+        max-width: 50%; 
+        max-height: calc(100vh - 60px); 
+    }
     #close-button {
         position: static; 
         text-align: center;
