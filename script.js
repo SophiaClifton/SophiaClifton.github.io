@@ -17,6 +17,17 @@ document.addEventListener('DOMContentLoaded', function () {
         overlay.style.display = 'none';
     });
 
+    closeButton.addEventListener('click', function (e) {
+    e.stopPropagation(); // Prevent overlay click event from triggering
+    overlay.style.display = 'none';
+    });
+
+    // Add touch event listener
+    closeButton.addEventListener('touchstart', function (e) {
+        e.stopPropagation();
+        overlay.style.display = 'none';
+    });
+
     const menuItems = document.querySelectorAll('ul li a');
     menuItems.forEach(item => {
         item.addEventListener('click', function (e) {
