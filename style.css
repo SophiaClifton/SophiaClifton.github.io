@@ -1,303 +1,281 @@
-/* Start Main Menu */
-ul {
-  position: fixed;
-  font-family: 'Montserrat', sans-serif;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.9);
-  text-align: center;
-  width: 100%; 
-  z-index: 3; 
-  transition: top 0.3s; 
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 10% 16px;
-  text-decoration: none;
-}
-a:hover {
-  color: #9370db;
-}
-
-/* Drop Down Menu */
-.dropdown-content {
-  display: none;
-  position: fixed;
-  transform: translateX(-10%); 
-  background-color: rgba(255, 255, 255, 0.9);
-  z-index: 3; 
+  /* Start Main Menu */
+  ul {
+    position: fixed;
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    width: 100%; /* Menu spans the full width */
+    z-index: 3; /* Menu at top */
+    transition: top 0.3s; /* Add a smooth transition effect */
+  }
   
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #9370db;
+  }
+
+  /* Start Drop Down Menu Artworks*/
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    transform: translateX(-10%); /* Center horizontally under the link */
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 3; /* Ensure the dropdown is above other content */
+    
 }
-/* Dropdown content when hovering */
+/* Show the dropdown content when hovering over the dropdown container */
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
 }
-/* End Drop Down Menu */
-/* End Main Menu */
+  /* End Drop Down Menu */
+  /* End Main Menu */
 
 
-/* Banner Image */
+  /* Banner Image */
 .banner-image {
-  background-image: url('images/PORT8.jpg'); 
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  top: 15%;
-  left: 0;
-  width: 100%;
-  height: 40vh; 
-  z-index: -1; /* Behind */
-}
+    background-image: url('images/PORT8.jpg'); 
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 40vh; /* Adjust this for the desired height */
+    z-index: -1; /* Behind other content */
+  }
 /* End Banner Image */
 
-/* Banner */
+/* Banner Div */
 .info {
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.7);
-  position: relative;
-  top: 120px; 
-}
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: relative;
+    top: 120px; /* Adjust the value to position it properly */
+  }
+  
+  .info h1 {
+    font-size: 36px;
+    color: #333;
+  }
+/* End Banner Div */
 
-.info h1 {
-  font-size: 36px;
-  color: #333;
-}
-/* End Banner */
-
-/* Artworks section */
+/* Artworks Div */
 #Artworks {
-  font-family: 'Montserrat', sans-serif;
-  text-align:center;
-  padding: 20px;
-  position: relative;
-  top: 10vh; 
-  padding-top: 25vh;
-}
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+    padding: 20px;
+    position: relative;
+    top: 200px; /* Adjust the value to position it properly */
+  }
+  
+  #Artworks h1 {
+    font-size: 26px;
+    color: #333;
+  }
 
-#Artworks h1 {
-  font-size: 26px;
-  color: #333;
-}
+  #Sketches {
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+    padding: 20px;
+    position: relative;
+    top: 250px;
+  }
+  
+  #Sketches h1 {
+    font-size: 26px;
+    color: #333;
+  }
 
-#Sketches {
-  font-family: 'Montserrat', sans-serif;
-  text-align:center;
-  padding: 20px;
-  position: relative;
-  top: 10vh;
-  padding-top: 15vh;
-}
+  #Assets {
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+    padding: 20px;
+    position: relative;
+    top: 270px;
+  }
+  
+  #Assets h1 {
+    font-size: 26px;
+    color: #333;
+  }
 
-#Sketches h1 {
-  font-size: 26px;
-  color: #333;
-}
+  #Games {
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+    padding: 20px;
+    position: relative;
+    top: 300px;
+  }
+  
+  #Games h1 {
+    font-size: 26px;
+    color: #333;
+  }
 
-#Assets {
-  font-family: 'Montserrat', sans-serif;
-  text-align:center;
-  padding: 20px;
-  position: relative;
-  top: 10vh;
-  padding-top: 15vh;
-}
+  #About {
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+    padding: 20px;
+    position: relative;
+    top: 300px;
+  }
+  
+  #About h1 {
+    font-size: 26px;
+    color: #333;
+  }
+  
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between images as needed */
+  }
+  
+  .image-gallery img {
+    max-width: 100%;
+    max-height: 300px;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 5px;
+  }
 
-#Assets h1 {
-  font-size: 26px;
-  color: #333;
-}
-
-#Games {
-  font-family: 'Montserrat', sans-serif;
-  text-align:center;
-  padding: 20px;
-  position: relative;
-  top: 10vh;
-  padding-top: 15vh;
-}
-
-#Games h1 {
-  font-size: 26px;
-  color: #333;
-}
-
-#About {
-  font-family: 'Montserrat', sans-serif;
-  text-align:center;
-  padding: 20px;
-  position: relative;
-  top: 10vh;
-  padding-top: 15vh;
-}
-
-#About h1 {
-  font-size: 26px;
-  color: #333;
-}
-
-.image-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px; 
-}
-
-.image-gallery img {
-  max-width: 100%;
-  max-height: 300px;
-  height: auto;
-  border: 1px solid #ddd;
-}
-
-/* Hover effect for the gallery images */
-.image-gallery img:hover {
-  opacity: 0.7;
-  cursor: pointer;
-}
-
-/* Styles for the overlay */
-#overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 2;
-  overflow:auto;
-  cursor:pointer;
-}
-
-#image-container {
-  display: inline-block;
-  max-width: 90%;
-  max-height: 80%;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: transparent; 
-  padding: 10px; 
-}
-
-#enlarged-image {
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
-  margin: 0 auto;
-}
-
-#close-button {
-  position: absolute;
-  top: 10px;
-  right: -30px;
-  font-size: 30px;
-  cursor: pointer;
-  color: white;
-}
-
-@media (max-width: 768px) {
-
+  /* Hover effect for the gallery images */
+  .image-gallery img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  
+  /* Styles for the overlay */
+  #overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    overflow:auto;
+    cursor:pointer;
+  }
+  
+  #image-container {
+    display: inline-block;
+    max-width: 90%;
+    max-height: 80%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent; /* Add background color to the container */
+    padding: 10px; /* Add some padding to the container */
+  }
+  
   #enlarged-image {
-      display: block;
-      margin: auto auto;
-      margin: 0 auto;
-      max-width: 100%; 
-      max-width: 50%; 
-      max-height: calc(100vh - 40px); 
-      max-height: calc(100vh - 60px); 
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
   }
+  
   #close-button {
-      position: static; 
-      text-align: center;
-      margin-top: 80px; 
+    position: absolute;
+    top: 10px;
+    right: -30px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
   }
-}
+/* Ensure close button is visible when overlay is scrollable */
+  #close-button.z-index {
+    z-index: 3;
+  }
+  
+/* End Artworks Div */
 
-/* Close button is visible when overlay is scrollable */
-#close-button.z-index {
-  z-index: 3;
+  .artworks-container {
+    text-align: center;
 }
-
-/* End Artworks section */
-
-.artworks-container {
-  text-align: center;
-}
-/* STRAT GAME SECTION  */
+/* STRAT GAME SECTION Add this CSS for the desired effect */
 
 .image-description {
-display: flex;
+  display: flex;
 }
 
 .image-galleryGames {
-flex: 1;
-position:relative;
-overflow:hidden;
-transition: opacity 0.5s; 
+  flex: 1;
+  position:relative;
+  overflow:hidden;
+  transition: opacity 0.5s; /* Add a transition effect for opacity */
 }
 
 .description {
-text-align: left;
-font-size: 20px;
-padding-top: 50px;
-flex: 1;
-opacity: 0.5;
-transition: opacity 0.5s; 
-padding-right: 100px;
-background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  font-size: 20px;
+  padding-top: 50px;
+  flex: 1;
+  opacity: 0.5;
+  transition: opacity 0.5s; /* Add a transition effect for opacity */
+  padding-right: 100px;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
+/* When hovering on the image, change its opacity and display the description */
 .image-description:hover .image-gallery {
-opacity: 0.5;
+  opacity: 0.5;
 }
 
 .image-description:hover .description {
-opacity: 1;
+  opacity: 1;
 }
 .game-image {
-padding-top: 50px; 
-max-width: 400px;
-height: auto;
+  padding-top: 50px; /* Add top padding to the game images */
+  max-width: 400px;
+  height: auto;
 }
 
 @media (max-width: 768px) {
-.image-description {
-  flex-direction: column; 
-}
+  .image-description {
+    flex-direction: column; /* Stack the elements vertically on smaller screens */
+  }
 }
 
-/* The game links */
+/* Add this CSS to style the game links */
 .game-link {
-text-decoration: none;
-color: purple; 
-transition: color 0.3s; 
+  text-decoration: none; /* Remove underlines from links */
+  color: purple; /* Set the default link color */
+  transition: color 0.3s; /* Add a smooth color transition */
 }
 
 .game-link:hover {
-color: #9370db; 
+  color: #9370db; /* Change link color to purple when hovered */
 }
 
 
 
 .About-image img {
-gap: 20px; 
-max-width: 100%;
-max-height: 300px;
-height: auto;
-border: 1px solid #ddd;
-padding: 5px;
+  gap: 20px; 
+  max-width: 100%;
+  max-height: 300px;
+  height: auto;
+  border: 1px solid #ddd;
+  padding: 5px;
 }
