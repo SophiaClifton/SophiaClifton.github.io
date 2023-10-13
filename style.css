@@ -209,13 +209,6 @@
     #image-container {
         position: static; 
     }
-    
-    #enlarged-image {
-        display: block;
-        margin: 0 auto;
-        max-width: 50%; 
-        max-height: calc(100vh - 60px); 
-    }
 
     #close-button {
         position: static; 
