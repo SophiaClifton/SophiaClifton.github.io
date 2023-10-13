@@ -206,7 +206,7 @@
   }
 /* Close button is visible when overlay is scrollable */
   #close-button.z-index {
-    z-index: 4;
+    z-index: 9999;
   }
   
 /* End Artworks section */
