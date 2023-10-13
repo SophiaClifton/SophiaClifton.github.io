@@ -22,7 +22,7 @@
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10% 16px;
     text-decoration: none;
   }
   a:hover {
@@ -52,11 +52,11 @@
     background-size: cover;
     background-position: center;
     position: absolute;
-    top: 100px;
+    top: 15%;
     left: 0;
     width: 100%;
     height: 40vh; 
-    z-index: -1;
+    z-index: -1; /* Behind */
   }
 /* End Banner Image */
 
@@ -204,11 +204,19 @@
     cursor: pointer;
     color: white;
   }
-/* Close button is visible when overlay is scrollable */
-  #close-button.z-index {
-    z-index: 9999;
-  }
- @media (max-width: 768px) {
+
+  @media (max-width: 768px) {
+    #image-container {
+        position: static; 
+    }
+    
+    #enlarged-image {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%; 
+        max-height: calc(100vh - 60px); 
+    }
+
     #close-button {
         position: static; 
         text-align: center;
@@ -216,6 +224,11 @@
     }
 }
 
+/* Close button is visible when overlay is scrollable */
+  #close-button.z-index {
+    z-index: 3;
+  }
+  
 /* End Artworks section */
 
   .artworks-container {
