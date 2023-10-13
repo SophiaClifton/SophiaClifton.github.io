@@ -208,7 +208,14 @@
   #close-button.z-index {
     z-index: 9999;
   }
-  
+ @media (max-width: 768px) {
+    #close-button {
+        position: static; 
+        text-align: center;
+        margin-top: 80px; 
+    }
+}
+
 /* End Artworks section */
 
   .artworks-container {
