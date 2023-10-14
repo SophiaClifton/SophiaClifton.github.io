@@ -146,7 +146,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Adjust the gap between images as needed */
+    gap: 20px; 
   }
   
   .image-gallery img {
@@ -154,7 +154,6 @@
     max-height: 300px;
     height: auto;
     border: 1px solid #ddd;
-    padding: 5px;
   }
 
   /* Hover effect for the gallery images */
@@ -185,8 +184,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: transparent; /* Add background color to the container */
-    padding: 10px; /* Add some padding to the container */
+    background-color: transparent;
+    padding: 10px; 
   }
   
   #enlarged-image {
