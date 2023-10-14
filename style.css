@@ -190,6 +190,7 @@
   }
   
   #enlarged-image {
+    padding-top: 10vh;
     max-width: 100%;
     max-height: 100%;
     display: block;
@@ -256,13 +257,9 @@
     #enlarged-image {
         display: block;
         margin: auto auto;
-        //margin: 0 auto;
         margin: 0 auto;
-        max-width: 100%; 
-        //max-width: 50%; 
-        max-width: 50%; 
-        max-height: calc(100vh - 40px); 
-        //max-height: calc(100vh - 60px); 
+        padding-top: 20vh;
+        max-width: 100%;  
         max-height: calc(100vh - 60px); 
     }
     #close-button {
