@@ -154,6 +154,7 @@
     max-height: 300px;
     height: auto;
     border: 1px solid #ddd;
+    padding: 5px;
   }
 
   /* Hover effect for the gallery images */
