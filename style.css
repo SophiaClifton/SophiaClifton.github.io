@@ -261,6 +261,7 @@
         top: 50px;
         max-width: 100%;  
         max-height: calc(100vh - 60px); 
+        margin-top: 30px;
     }
     #close-button {
         position: static; 
