@@ -256,7 +256,7 @@
 @media (max-width: 768px) {
     #enlarged-image {
         display: block;
-        max-height: 150px;
+        max-height: 10px;
         margin: auto auto;
         margin: 0 auto;
         top: 50px;
