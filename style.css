@@ -143,6 +143,19 @@
     font-size: 26px;
     color: #333;
   }
+
+  #Contact {
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+    padding: 20px;
+    position: relative;
+    top: 300px;
+  }
+  
+  #Contact h1 {
+    font-size: 26px;
+    color: #333;
+  }
   
   .image-gallery {
     display: flex;
@@ -231,6 +244,12 @@
   transition: opacity 0.5s; /* Add a transition effect for opacity *//* Add a transition effect for opacity */
 }
 
+.image-About {
+  flex: 1;
+  position:relative;
+  overflow:hidden;
+}
+
 .description {
   text-align: left;
   font-size: 20px;
@@ -240,6 +259,15 @@
   transition: opacity 0.5s; /* Add a transition effect for opacity *//* Add a transition effect for opacity */
   padding-right: 100px;
   background-color: rgba(255, 255, 255, 0.8);
+}
+
+.descriptionAbout {
+  text-align: left;
+  font-size: 20px;
+  padding-top: 50px;
+  flex: 1;
+  padding-right: 100px;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 /* When hovering on the image, change its opacity and display the description */
@@ -252,6 +280,19 @@
   opacity: 1;
 }
 .game-image {
+  padding-top: 50px; /* Add top padding to the game images *//* Add top padding to the game images */
+  max-width: 400px;
+  height: auto;
+}
+
+.about-image {
+  padding-top: 50px; /* Add top padding to the game images *//* Add top padding to the game images */
+  padding-left: 50px;
+  max-width: 400px;
+  height: auto;
+}
+
+.About-image {
   padding-top: 50px; /* Add top padding to the game images *//* Add top padding to the game images */
   max-width: 400px;
   height: auto;

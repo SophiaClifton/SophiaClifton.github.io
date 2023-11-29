@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
         overlay.style.display = 'none';
     });
 
+    const offsetValue = 50;
     const menuItems = document.querySelectorAll('ul li a');
     menuItems.forEach(item => {
         item.addEventListener('click', function (e) {
@@ -37,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 window.scroll({
                     behavior: 'smooth',
                     left: 0,
-                    top: targetSection.offsetTop
+                    top: targetSection.offsetTop - offsetValue
                 });
             }
         });
