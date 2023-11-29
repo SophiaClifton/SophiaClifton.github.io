@@ -8,9 +8,9 @@
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0.9);
     text-align: center;
-    width: 100%; /* Menu spans the full width */
-    z-index: 3; /* Menu at top */
-    transition: top 0.3s; /* Add a smooth transition effect */
+    width: 100%; /* Menu spans the full width *//* Menu spans the full width */
+    z-index: 3; /* Menu at top *//* Menu at top */
+    transition: top 0.3s; /* Add a smooth transition effect *//* Add a smooth transition effect */
   }
   
   li {
@@ -29,15 +29,16 @@
     color: #9370db;
   }
 
-  /* Start Drop Down Menu Artworks*/
+  /* Start Start Drop Down Menu ArtworksArtworks*/
   .dropdown-content {
     display: none;
     position: fixed;
-    transform: translateX(-10%); /* Center horizontally under the link */
+    transform: translateX(-10%); /* Center horizontally under the link *//* Center horizontally under the link */
     background-color: rgba(255, 255, 255, 0.9);
-    z-index: 3; /* Ensure the dropdown is above other content */
+    z-index: 3; /* Ensure the dropdown is above other content *//* Ensure the dropdown is above other content */
     
 }
+/* Show the dropdown content when hovering over the dropdown container */
 /* Show the dropdown content when hovering over the dropdown container */
 .dropdown:hover .dropdown-content {
     display: block;
@@ -55,34 +56,35 @@
     top: 100px;
     left: 0;
     width: 100%;
-    height: 40vh; /* Adjust this for the desired height */
-    z-index: -1; /* Behind other content */
+    height: 40vh; /* Adjust this for the desired height *//* Adjust this for the desired height */
+    z-index: -1; /* Behind other content */ /* Behind other content */
   }
 /* End Banner Image */
 
-/* Banner Div */
+/* Banner Div Div */
 .info {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.7);
     position: relative;
-    top: 120px; /* Adjust the value to position it properly */
+    top: 120px; /* Adjust the value to position it properly *//* Adjust the value to position it properly */
   }
   
   .info h1 {
     font-size: 36px;
     color: #333;
   }
-/* End Banner Div */
+/* End Banner Div Div */
 
+/* Artworks Div */
 /* Artworks Div */
 #Artworks {
     font-family: 'Montserrat', sans-serif;
     text-align:center;
     padding: 20px;
     position: relative;
-    top: 200px; /* Adjust the value to position it properly */
+    top: 200px; /* Adjust the value to position it properly *//* Adjust the value to position it properly */
   }
   
   #Artworks h1 {
@@ -185,7 +187,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: transparent; /* Add background color to the container */
+    background-color: transparent;/* Add background color to the container */
     padding: 10px; /* Add some padding to the container */
   }
   
@@ -205,16 +207,18 @@
     color: white;
   }
 /* Ensure close button is visible when overlay is scrollable */
+/* Ensure close button is visible when overlay is scrollable */
   #close-button.z-index {
     z-index: 3;
   }
   
 /* End Artworks Div */
+/* End Artworks Div */
 
   .artworks-container {
     text-align: center;
 }
-/* STRAT GAME SECTION Add this CSS for the desired effect */
+/* STRAT GAME SECTION Add this CSS for the desired effectAdd this CSS for the desired effect */
 
 .image-description {
   display: flex;
@@ -224,7 +228,7 @@
   flex: 1;
   position:relative;
   overflow:hidden;
-  transition: opacity 0.5s; /* Add a transition effect for opacity */
+  transition: opacity 0.5s; /* Add a transition effect for opacity *//* Add a transition effect for opacity */
 }
 
 .description {
@@ -233,11 +237,12 @@
   padding-top: 50px;
   flex: 1;
   opacity: 0.5;
-  transition: opacity 0.5s; /* Add a transition effect for opacity */
+  transition: opacity 0.5s; /* Add a transition effect for opacity *//* Add a transition effect for opacity */
   padding-right: 100px;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
+/* When hovering on the image, change its opacity and display the description */
 /* When hovering on the image, change its opacity and display the description */
 .image-description:hover .image-gallery {
   opacity: 0.5;
@@ -247,26 +252,39 @@
   opacity: 1;
 }
 .game-image {
-  padding-top: 50px; /* Add top padding to the game images */
+  padding-top: 50px; /* Add top padding to the game images *//* Add top padding to the game images */
   max-width: 400px;
   height: auto;
 }
 
 @media (max-width: 768px) {
-  .image-description {
-    flex-direction: column; /* Stack the elements vertically on smaller screens */
-  }
+    #enlarged-image {
+        display: block;
+        max-height: 10px;
+        margin: auto auto;
+        margin: 0 auto;
+        top: 50px;
+        max-width: 100%;  
+        max-height: calc(100vh - 60px); 
+        padding-top: 50px;
+    }
+    #close-button {
+        position: static; 
+        text-align: center;
+        margin-top: 80px; 
+    }
 }
 
 /* Add this CSS to style the game links */
+/* Add this CSS to style the game links */
 .game-link {
-  text-decoration: none; /* Remove underlines from links */
-  color: purple; /* Set the default link color */
-  transition: color 0.3s; /* Add a smooth color transition */
+  text-decoration: none; /* Remove underlines from links */ /* Remove underlines from links */
+  color: purple; /* Set the default link color *//* Set the default link color */
+  transition: color 0.3s; /* Add a smooth color transition *//* Add a smooth color transition */
 }
 
 .game-link:hover {
-  color: #9370db; /* Change link color to purple when hovered */
+  color: #9370db; /* Change link color to purple when hovered *//* Change link color to purple when hovered */
 }
 
 

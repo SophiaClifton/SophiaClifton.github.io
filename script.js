@@ -17,6 +17,17 @@ document.addEventListener('DOMContentLoaded', function () {
         overlay.style.display = 'none';
     });
 
+    closeButton.addEventListener('click', function (e) {
+    e.stopPropagation(); // Prevent overlay click event from triggering
+    overlay.style.display = 'none';
+    });
+
+    // Add touch event listener
+    closeButton.addEventListener('touchstart', function (e) {
+        e.stopPropagation();
+        overlay.style.display = 'none';
+    });
+
     const menuItems = document.querySelectorAll('ul li a');
     menuItems.forEach(item => {
         item.addEventListener('click', function (e) {
@@ -67,6 +78,17 @@ document.addEventListener('DOMContentLoaded', function () {
             menu.style.top = '-10px';
         }
     });
+
+    function updateBannerSize() {
+        const banner = document.getElementById('banner');
+        const viewportHeight = window.innerHeight;
+        const bannerHeight = viewportHeight * 0.4; // Adjust this percentage as needed
+    
+        banner.style.height = bannerHeight + 'px';
+    }
+    
+    window.addEventListener('resize', updateBannerSize);
+    window.addEventListener('load', updateBannerSize);
 
     function updateBannerSize() {
         const banner = document.getElementById('banner');
