@@ -8,9 +8,9 @@
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0.9);
     text-align: center;
-    width: 100%; 
-    z-index: 3; 
-    transition: top 0.3s; 
+    width: 100%; /* Menu spans the full width */
+    z-index: 3; /* Menu at top */
+    transition: top 0.3s; /* Add a smooth transition effect */
   }
   
   li {
@@ -29,16 +29,16 @@
     color: #9370db;
   }
 
-  /* Drop Down Menu */
+  /* Start Drop Down Menu Artworks*/
   .dropdown-content {
     display: none;
     position: fixed;
-    transform: translateX(-10%); 
+    transform: translateX(-10%); /* Center horizontally under the link */
     background-color: rgba(255, 255, 255, 0.9);
-    z-index: 3; 
+    z-index: 3; /* Ensure the dropdown is above other content */
     
 }
-/* Dropdown content when hovering */
+/* Show the dropdown content when hovering over the dropdown container */
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -55,34 +55,34 @@
     top: 100px;
     left: 0;
     width: 100%;
-    height: 40vh; 
-    z-index: -1;
+    height: 40vh; /* Adjust this for the desired height */
+    z-index: -1; /* Behind other content */
   }
 /* End Banner Image */
 
-/* Banner */
+/* Banner Div */
 .info {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.7);
     position: relative;
-    top: 120px; 
+    top: 120px; /* Adjust the value to position it properly */
   }
   
   .info h1 {
     font-size: 36px;
     color: #333;
   }
-/* End Banner */
+/* End Banner Div */
 
-/* Artworks section */
+/* Artworks Div */
 #Artworks {
     font-family: 'Montserrat', sans-serif;
     text-align:center;
     padding: 20px;
     position: relative;
-    top: 200px; 
+    top: 200px; /* Adjust the value to position it properly */
   }
   
   #Artworks h1 {
@@ -146,7 +146,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; 
+    gap: 20px; /* Adjust the gap between images as needed */
   }
   
   .image-gallery img {
@@ -185,8 +185,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: transparent; 
-    padding: 10px; 
+    background-color: transparent; /* Add background color to the container */
+    padding: 10px; /* Add some padding to the container */
   }
   
   #enlarged-image {
@@ -204,17 +204,17 @@
     cursor: pointer;
     color: white;
   }
-/* Close button is visible when overlay is scrollable */
+/* Ensure close button is visible when overlay is scrollable */
   #close-button.z-index {
     z-index: 3;
   }
   
-/* End Artworks section */
+/* End Artworks Div */
 
   .artworks-container {
     text-align: center;
 }
-/* STRAT GAME SECTION  */
+/* STRAT GAME SECTION Add this CSS for the desired effect */
 
 .image-description {
   display: flex;
@@ -224,7 +224,7 @@
   flex: 1;
   position:relative;
   overflow:hidden;
-  transition: opacity 0.5s; 
+  transition: opacity 0.5s; /* Add a transition effect for opacity */
 }
 
 .description {
@@ -233,11 +233,12 @@
   padding-top: 50px;
   flex: 1;
   opacity: 0.5;
-  transition: opacity 0.5s; 
+  transition: opacity 0.5s; /* Add a transition effect for opacity */
   padding-right: 100px;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
+/* When hovering on the image, change its opacity and display the description */
 .image-description:hover .image-gallery {
   opacity: 0.5;
 }
@@ -246,32 +247,33 @@
   opacity: 1;
 }
 .game-image {
-  padding-top: 50px; 
+  padding-top: 50px; /* Add top padding to the game images */
   max-width: 400px;
   height: auto;
 }
 
 @media (max-width: 768px) {
   .image-description {
-    flex-direction: column; 
+    flex-direction: column; /* Stack the elements vertically on smaller screens */
   }
 }
 
-/* The game links */
+/* Add this CSS to style the game links */
 .game-link {
-  text-decoration: none;
-  color: purple; 
-  transition: color 0.3s; 
+  text-decoration: none; /* Remove underlines from links */
+  color: purple; /* Set the default link color */
+  transition: color 0.3s; /* Add a smooth color transition */
 }
 
 .game-link:hover {
-  color: #9370db; 
+  color: #9370db; /* Change link color to purple when hovered */
 }
 
 
 
 .About-image img {
   gap: 20px; 
+
   max-width: 100%;
   max-height: 300px;
   height: auto;
