@@ -353,3 +353,9 @@ a.linkedin-link:visited {
     color: darkviolet; /* Change color when the link is clicked */
 }
 
+.Samuel-image
+{
+  max-width: 50%;
+  max-height: 50%;
+}
+
