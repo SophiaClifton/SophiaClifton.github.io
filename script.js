@@ -77,3 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('resize', updateBannerSize);
     window.addEventListener('load', updateBannerSize);
 });
+
+console.log("Hiya! I see you're snooping about.");
+console.log("Not sure what you're hoping to find...");
+console.log("But whatever it is, feel free to message me and ask :)");
