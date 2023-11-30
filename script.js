@@ -63,11 +63,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-        if (window.scrollY > 50) {
-            menu.style.top = '0'; // Change the value as needed
-        } else {
-            menu.style.top = '-10px';
-        }
     });
 
     function updateBannerSize() {
