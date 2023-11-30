@@ -339,3 +339,17 @@
   border: 1px solid #ddd;
   padding: 5px;
 }
+
+/* Default link styles */
+a.email-link,
+a.linkedin-link {
+    color: darkviolet; /* Change the default link color */
+    text-decoration: none; /* Remove default underline */
+}
+
+/* Style for the clicked links */
+a.email-link:visited,
+a.linkedin-link:visited {
+    color: darkviolet; /* Change color when the link is clicked */
+}
+
