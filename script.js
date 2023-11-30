@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const overlay = document.getElementById('overlay');
     const enlargedImage = document.getElementById('enlarged-image');
     const closeButton = document.getElementById('close-button');
+    const menu = document.getElementById('menu');
 
     galleryImages.forEach(image => {
         image.addEventListener('click', function () {
@@ -30,6 +31,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const offsetValue = 50;
     const menuItems = document.querySelectorAll('ul li a');
+    const sections = document.querySelectorAll('section');
+
     menuItems.forEach(item => {
         item.addEventListener('click', function (e) {
             e.preventDefault();
@@ -44,23 +47,11 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    closeButton.addEventListener('click', function (e) {
-        e.stopPropagation(); // Prevent overlay click event from triggering
-        overlay.style.display = 'none';
-    });
-    
-    // Add touch event listener
-    closeButton.addEventListener('touchstart', function (e) {
-        //e.stopPropagation();
-        overlay.style.display = 'none';
-    });
-
-    // Highlight the current menu item when scrolling to a section
     window.addEventListener('scroll', function () {
         let current = '';
-        section.forEach(section => {
+        sections.forEach(section => {
             const sectionTop = section.offsetTop;
-            if (this.scrollY >= sectionTop - 100) {
+            if (window.scrollY >= sectionTop - 100) {
                 current = section.getAttribute('id');
             }
         });
@@ -72,9 +63,8 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-        // Check scroll position to fix or unfix the menu
-        if (this.scrollY > 50) {
-            menu.style.top = '-10px';
+        if (window.scrollY > 50) {
+            menu.style.top = '0'; // Change the value as needed
         } else {
             menu.style.top = '-10px';
         }
@@ -82,24 +72,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function updateBannerSize() {
         const banner = document.getElementById('banner');
-        const viewportHeight = window.innerHeight;
-        const bannerHeight = viewportHeight * 0.4; // Adjust this percentage as needed
-    
-        banner.style.height = bannerHeight + 'px';
+        if (banner) {
+            const viewportHeight = window.innerHeight;
+            const bannerHeight = viewportHeight * 0.4; // Adjust this percentage as needed
+            banner.style.height = bannerHeight + 'px';
+        }
     }
-    
+
     window.addEventListener('resize', updateBannerSize);
     window.addEventListener('load', updateBannerSize);
-
-    function updateBannerSize() {
-        const banner = document.getElementById('banner');
-        const viewportHeight = window.innerHeight;
-        const bannerHeight = viewportHeight * 0.4; // Adjust this percentage as needed
-    
-        banner.style.height = bannerHeight + 'px';
-    }
-    
-    window.addEventListener('resize', updateBannerSize);
-    window.addEventListener('load', updateBannerSize);
-
 });
