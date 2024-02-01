@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const closeButton = document.getElementById('close-button');
     const menu = document.getElementById('menu');
 
+    //image overlay
     galleryImages.forEach(image => {
         image.addEventListener('click', function () {
             const src = this.getAttribute('src');
@@ -13,22 +14,19 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    //for mouse
     closeButton.addEventListener('click', function (e) {
         e.stopPropagation(); // Prevent overlay click event from triggering
         overlay.style.display = 'none';
     });
 
-    closeButton.addEventListener('click', function (e) {
-    e.stopPropagation(); // Prevent overlay click event from triggering
-    overlay.style.display = 'none';
-    });
-
-    // Add touch event listener
+    // Add touch event for phone...
     closeButton.addEventListener('touchstart', function (e) {
         e.stopPropagation();
         overlay.style.display = 'none';
     });
 
+    //scrolling functionality
     const offsetValue = 50;
     const menuItems = document.querySelectorAll('ul li a');
     const sections = document.querySelectorAll('section');
@@ -65,6 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
 
+    //banner size per screen
     function updateBannerSize() {
         const banner = document.getElementById('banner');
         if (banner) {
