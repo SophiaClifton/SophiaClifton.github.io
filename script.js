@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const banner = document.getElementById('banner');
         if (banner) {
             const viewportHeight = window.innerHeight;
-            const bannerHeight = viewportHeight * 0.4; // Adjust this percentage as needed
+            const bannerHeight = viewportHeight * 0.4; 
             banner.style.height = bannerHeight + 'px';
         }
     }
