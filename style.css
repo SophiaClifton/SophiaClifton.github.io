@@ -179,7 +179,7 @@
     cursor: pointer;
   }
   
-  /* Styles for the overlay */
+  /* Styles for the image overlay in the image gallery */
   #overlay {
     display: none;
     position: fixed;
@@ -225,11 +225,10 @@
     z-index: 3;
   }
   
-/* End Artworks Div */
-
   .artworks-container {
     text-align: center;
 }
+
 
 .image-description {
   display: flex;
@@ -240,12 +239,6 @@
   position:relative;
   overflow:hidden;
   transition: opacity 0.5s; 
-}
-
-.image-About {
-  flex: 1;
-  position:relative;
-  overflow:hidden;
 }
 
 .description {
@@ -289,12 +282,9 @@
   height: auto;
 }
 
-.About-image {
-  padding-top: 50px; 
-  max-width: 400px;
-  height: auto;
-}
 
+
+/*for smaller screens-overlay*/
 @media (max-width: 768px) {
     #enlarged-image {
         display: block;
