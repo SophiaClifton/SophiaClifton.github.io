@@ -29,25 +29,26 @@
     color: #9370db;
   }
 
-  /* Start Start Drop Down Menu ArtworksArtworks*/
+  /* Start Drop Down Menu for Artworks*/
   .dropdown-content {
     display: none;
     position: fixed;
-    transform: translateX(-10%); /* Center horizontally under the link */
+    transform: translateX(-10%); 
     background-color: rgba(255, 255, 255, 0.9);
-    z-index: 3; /* Ensure the dropdown is above other content */
+    z-index: 3; /*Dropdown is above other stuff */
     
 }
-/* Show the dropdown content when hovering over the dropdown container */
+/* Show the dropdown when hovering over the dropdown */
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
   /* End Drop Down Menu */
+
   /* End Main Menu */
 
 
-  /* Banner Image */
+  /* Banner Image with my name and title*/
 .banner-image {
     background-image: url('images/PORT8.jpg'); 
     background-size: cover;
@@ -77,7 +78,7 @@
   }
 /* End Banner Div  */
 
-/* Artworks Div */
+/* Website Sections*/
 #Artworks {
     font-family: 'Montserrat', sans-serif;
     text-align:center;
@@ -156,11 +157,12 @@
     color: #333;
   }
   
+  /*Image gallery for all the pretty drawings*/
   .image-gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Adjust the gap between images */
+    gap: 20px; /* Gap between images */
   }
   
   .image-gallery img {
@@ -320,8 +322,6 @@
 .game-link:hover {
   color: #9370db; 
 }
-
-
 
 .About-image img {
   gap: 20px; 
