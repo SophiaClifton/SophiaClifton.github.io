@@ -10,9 +10,18 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Young+Serif&display=swap" rel="stylesheet">
     <script src="script.js"></script>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#includedContent").load("page2.html");
+        });
+    </script>
     <title>Sophia's Website :D</title>
 </head>
 <body>
+<div class = "container">
+    <div class="pages">
+    <div class="page">
     <ul id="Home" class="section">
         <li><a href="#Home">Home</a></li>
         <li class="dropdown">
@@ -24,6 +33,7 @@
             </div>
         </li>
         <li><a href="#Games">Games</a></li>
+        <li><a href="#Competitions"> Competitions </a></li>
         <li><a href="#About">About</a></li>
         <li><a href="#Contact">Contact</a></li>
     </ul>
@@ -32,6 +42,8 @@
         <h1>Sophia's Portfolio Website</h1>
         Thank you for visiting :D
     </div>
+
+    <div id="Competitions"></div>
 
         <div id="Artworks" class="section">
             <h1>Sophia's Favorites</h1>
@@ -134,13 +146,13 @@
                 <div class="image-galleryGames">
                     <img src="images/SOPHIA.jpg" alt="Image 1" class="about-image">
                 </div>
-                <div class="descriptionAbout">
+                <div class="description">
                     <p>Currently completing her 2nd year towards her Bachelor's in Computer Science at Concordia University. </p>
                     <p>Received Dean's List and is the Marketing Director for the Computer Science and Software Engineering Society of Concordia University (SCS).</p>
                     <p>She is an avid gamejammer with a strong foundation in UNITY, and over 8 years of experience in Clip Studio Paint. </p>
                     <p>Additionally, she boasts proficiency in multiple coding languages including  Java, JavaScript, HTML, CSS, Python, Clojure, Erlang, C, and C#.</p>
                     <p>She loves rabbits.</p>
-                    </div>
+                </div>
             </div>
         </div>
 
@@ -149,18 +161,31 @@
             <div>
                 <p>Email her at <a class="email-link" href="mailto:sophiashoco@gmail.com">sophiashoco@gmail.com</a></p>
                 <p>View her LinkedIn at <a class="linkedin-link" href="https://www.linkedin.com/in/sophia-clifton-harting">https://www.linkedin.com/in/sophia-clifton-harting</a></p>
-                <img src="images/Samuel.1.jpg" alt="Image 1" class="Samuel-image">
+                <img class="Samuel-image" src="images/Samuel.1.jpg" alt="Image 1">
             </div>
-        </div>             
+        </div>   
+                     
+</div>
 
-
-    <div class="banner-image"></div>
+<div class="banner-image"></div>
     <div id="overlay">
         <div id="image-container">
             <img id="enlarged-image">
             <span id="close-button">&times;</span>
         </div>
     </div>
+
+
+<div class="page">
+    <div id="includedContent"></div>
+    
+</div>
+
+
+
+</div>
+</div>
+
 
 </body>
 </html>

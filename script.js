@@ -31,19 +31,28 @@ document.addEventListener('DOMContentLoaded', function () {
     const menuItems = document.querySelectorAll('ul li a');
     const sections = document.querySelectorAll('section');
 
+    
     menuItems.forEach(item => {
-        item.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetSection = document.querySelector(this.getAttribute('href'));
-            if (targetSection) {
-                window.scroll({
-                    behavior: 'smooth',
-                    left: 0,
-                    top: targetSection.offsetTop - offsetValue
-                });
-            }
-        });
-    });
+        if (item.textContent.trim() === "Competitions") {
+            item.addEventListener('click', function (e) {
+                e.preventDefault();
+                slide(1);
+            });
+        } else {
+            item.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetSection = document.querySelector(this.getAttribute('href'));
+                if (targetSection) {
+                    window.scroll({
+                        behavior: 'smooth',
+                        left: 0,
+                        top: targetSection.offsetTop - offsetValue
+                    });
+                }
+            });
+        }
+    });    
+    
 
     window.addEventListener('scroll', function () {
         let current = '';
@@ -76,6 +85,29 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('resize', updateBannerSize);
     window.addEventListener('load', updateBannerSize);
 });
+
+//swapping between pages
+//const pages = document.querySelectorAll(".container .pages .page");
+const translateAmount = 100;
+let translate = 0;
+let currentPage = 0; // Keep track of the current page
+
+slide = (direction) => {
+    const pages = document.querySelectorAll(".page");
+
+    if(currentPage==0){
+        currentPage = 1; // Increment or decrement the current page based on the direction
+        translate = -translateAmount;
+    }
+    else{
+        currentPage = 0;
+        translate = 0;
+    }
+    pages.forEach(
+        page => (page.style.transform = `translateX(${translate}%)`)
+    );
+};
+
 
 console.log("Hiya! I see you're snooping about.");
 console.log("Not sure what you're hoping to find...");
