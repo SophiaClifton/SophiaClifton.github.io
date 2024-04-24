@@ -1,4 +1,233 @@
-<div>
-    <h1>Welcome to Page 2!</h1>
-    <p>This is some additional content loaded from page2.html.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Young+Serif&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script2.js"></script>
+    <title>Sophia's Website :D</title>
+    
+</head>
+<body>
+    <div class = "container">
+    <ul>
+        <li><a href="#Home">Home</a></li>
+        <li class="dropdown">
+            <a href="#Hackathons">Hackathons</a>
+            <div class="dropdown-content">
+                <a href="#Hackathons">ConUHacks VIII</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#CTF">CTFs</a>
+            <div class="dropdown-content">
+                <a href="#CTF">AtHacks</a>
+                <a href="#NorthSec">NorthSec</a>
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <a href="#Programming">Programming</a>
+            <div class="dropdown-content">
+                <a href="#Programming">CS Games</a>
+                <a href="#XTREME">XTREME Programming</a>
+                <!--<a href="#Gamelabs">Ubisoft Gamelabs</a>-->
+            </div>
+        </li>
+        <li><a href="index.html" id="link">Art Portfolio</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Contact">Contact</a></li>
+    </ul>
+    <div id="Home" class="section"></div>
+    <div class="banner-image"></div>
+    <div class="info">
+        <h1>Sophia's Competitions</h1>
+        Thank you for visiting :D<br><br>
+        Download CV
+    </div>
+
+        <div id="Hackathons" class="section">
+            <h1 id="header"><br>Hackathons</h1>
+            <div class="compInfo">
+                <div class="container2">
+                    <p class = "name">ConUHacks VIII</p>
+                </div>
+                <div class="container3">
+                    <p class="awards">Winner - Behaviour Interactive Challenge</p>
+                </div>
+                <div class = "container1">
+                    <p class = "descriptionComp">
+                        Project Description: <br><br>
+                        In a Dead By Daylight 3D lobby environment, we visualized estimated queue times considering how different regions may 
+                        experience different killer:survivor ratios, how player demographics influence peak hours played, 
+                        how the time of gameplay influences players rank and queue times. 
+                        Additionally, we also considered how different regions may have different ratios of party vs solo players, 
+                        and how this would affect queue times.<br><br>
+                        Visit project at <a href="https://devpost.com/software/tomster-project" class="game-link"><b> DevPost</b></a><br>
+                        Try the project on <a href="https://bochinator.itch.io/campfire-queue" class="game-link"> <b>Itch.io</b></a>
+
+                    </p>
+                    <p class = "extraInfo">
+                        Skills:<br><br>
+                        - Derived queue estimation algorithm <br>
+                        - Python<br>
+                        - C++ in Unity Development<br>
+                        <br><br><br><br>
+                    </p>
+                </div>
+                <div class="image-gallery">
+                    <img src="images/behaviourImage.jpg" alt="Image 1">
+                    <img src="images/chalkBoard.jpg" alt="Image 2">
+                    <img src="images/conuhacks.jpg" alt="Image 3">
+                </div>
+            </div>
+        </div>
+
+        <div id="CTF" class="section">
+            <h1 id="header">CTFs</h1>
+            <div class="compInfo">
+                <div class="container2">
+                    <p id = "AtHacks" class = "name">AtHacks</p>
+                </div>
+                <div class="container3">
+                    <p class="awards">Placed 19th/102 teams</p>
+                </div>
+                <div class = "container1">
+                    <p class = "descriptionComp">
+                        <br>
+                        Participated in my FIRST 24h CTF competition in which I solved multiple flags. <br><br>
+                        I used Apktool for reverse enginnering an Android app, my knowledge of data structures and algorithms to solve a 
+                        Huffman Coding challenge, and various Steganography techniques to nitpick at images. <br><br>
+                    </p>
+                    <p class = "extraInfo">
+                        Skills:<br><br>
+                        - Apktool for Android Reverse Engineering <br>
+                        - Steganography (LSB, binwalk, zsteg...)<br>
+                        - Huffman Coding<br>
+                    </p>
+                </div>
+                <div class="image-gallery">
+                </div>
+                <div class="container2">
+                    <p id="NorthSec" class="name section">NorthSec</p>
+                </div>
+                <div class="container2">
+                    <p class="awards">TBD</p>
+                </div>
+                <div class = "container1">
+                    <p class = "descriptionComp">
+                        <br>
+                        TBD - Taking place May 19th!
+                    </p>
+                    <p class = "extraInfo">
+                        Skills:<br><br>
+                        - TBD
+                    </p>
+                </div>
+                <div class="image-gallery">
+                </div>
+            </div>
+        </div>
+
+        <div id="Programming" class="section">
+            <h1 id="header">Programming</h1>
+            <div class="compInfo">
+                <div class="container2">
+                    <p class = "name">CS Games</p>
+                </div>
+                <div class = "container1">
+                    <p class = "descriptionComp">
+                        <br>The CS Games competition is the largest computer science competition in Quebec each year. Every mid-March, 
+                        it brings together between twenty and thirty teams of ten undergraduate students from around ten universities 
+                        in North America. Teams must participate in demanding competitions covering all areas of computing: from web 
+                        and mobile development to artificial intelligence, cybersecurity and more practical areas such as robotics.<br><br>
+                        Particularly, I participated in the Information of Teconology challenged, which involved reverse engineering Raspberry 
+                        software and searching for hidden flags.<br>
+                        Additionally, I participated in the Art Forgery Challenge which involved replicating given images using HTML and CSS in limited time.<br><br>
+                    </p>
+                    <p class = "extraInfo">
+                        Skills:<br><br>
+                        - Kali-Linux (nmap, binwalk, grep... )<br>
+                        - HTML<br>
+                        - CSS<br>
+                    </p>
+                </div>
+                <div class="image-gallery">
+                    <img src="images/csGamesGroup.jpg" alt="Image 1">
+                    <img src="images/csGamesIO.jpg" alt="Image 2">
+                    <img src="images/csGamesTeam.jpg" alt="Image 3">
+                </div>
+                <div class="container2">
+                    <p id="XTREME" class = "name"><br>EngWeek 2024 XTREME Programming Competition</p>
+                </div>
+                <div class="container2">
+                    <p class="awards">2nd Place Winner</p>
+                </div>
+                <div class = "container1">
+                    <p class = "descriptionComp">
+                        <br>
+                        I participated in an 6 hour programming competition for Concordia's Engineering Week.<br><br>
+                        I solved the The "BracketOps Challenge" which required participants to develop a BracketOps Resolver, 
+                        capable of evaluating strings representing a complex mathematical expression using the four types of brackets 
+                        to indicate operations, along with integers and floating-point numbers.The outputted result being the evaluated 
+                        expression as a float, rounded to four decimal places.<br><br>
+                        To solve this challenge and meet its constraints, I employed stack structures to keep track of the various operations and current values.<br><br>
+                        The coded solution and challenge description are available on <a href="https://devpost.com/software/tomster-project" class="game-link"> <b>GitHub</b></a>.<br>
+                    </p>
+                    <p class = "extraInfo">
+                        Skills:<br><br>
+                        - Data structures and algorithms <br>
+                        - Java<br>
+                    </p>
+                </div>
+                <div class="image-gallery">
+                    <img src="images/xtremeProg.jpg" alt="Image 1">
+                </div>
+            </div>
+        </div>
+
+        <div id="About" class="section">
+            <h1>About Sophia</h1>
+            <div class="image-descriptionComp">
+                <div class="image-galleryGames">
+                    <img src="images/SOPHIA.jpg" alt="Image 1" class="about-image">
+                </div>
+                <div class="descriptionAbout">
+                    <p>Currently completing her 2nd year towards her Bachelor's in Computer Science at Concordia University. </p>
+                    <p>Received Dean's List and is the Marketing Director for the Computer Science and Software Engineering Society of Concordia University (SCS).</p>
+                    <p>She is an avid gamejammer with a strong foundation in UNITY, and over 8 years of experience in Clip Studio Paint. </p>
+                    <p>Additionally, she boasts proficiency in multiple coding languages including  Java, JavaScript, HTML, CSS, Python, Clojure, Erlang, C, and C#.</p>
+                    <p>She loves rabbits.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="Contact" class="section">
+            <h1>Contact Sophia</h1>
+            <div>
+                <p>Email her at <a class="email-link" href="mailto:sophiashoco@gmail.com">sophiashoco@gmail.com</a></p>
+                <p>View her LinkedIn at <a class="linkedin-link" href="https://www.linkedin.com/in/sophia-clifton-harting">https://www.linkedin.com/in/sophia-clifton-harting</a></p>
+                <img class="Samuel-imageComp" src="images/Samuel.1.jpg" alt="Image 1">
+            </div>
+        </div>   
+                     
 </div>
+</div>
+<div class="banner-image"></div>
+    <div id="overlay">
+        <div id="image-container">
+            <img id="enlarged-image">
+            <span id="close-button">&times;</span>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

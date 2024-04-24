@@ -100,14 +100,13 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('resize', updateBannerSize);
     window.addEventListener('load', updateBannerSize);
 
-
     $(document).ready(function() {
         // Function to handle page transition
         function slidePage(url) {
-            $('body').addClass('page-slide-out'); 
+            $('body').addClass('page-slide-out2'); 
             setTimeout(function() {
                 window.location.href = url; 
-            }, 350); // wait for animation b4 page load
+            }, 350); //wait for animation b4 for page load
         }
     
         // Handle click event for the Competitions link
@@ -117,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function () {
             slidePage(url); 
         });
     });
-    
+
 });
 
 console.log("Hiya! I see you're snooping about.");

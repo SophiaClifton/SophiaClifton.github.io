@@ -1,24 +1,7 @@
 .container{
   width:100%;
   height: 100%;
-  overflow:hidden;
-}
-
-.pages{
-  display:flex;
-  width: 200%;
-  height: 100%;
-  box-sizing: border-box;
-}
-
-.page{
-  width: 100%;
-  height: 100%;
-  display:flex;
-  flex-direction:column;
-  gap: 10px;
-  transition: all 1s;
-  transition: transform 0.5s ease;
+  min-width: 400px;
 }
 
   /* Start Main Menu test*/
@@ -272,11 +255,16 @@
   padding-top: 50px;
   flex: 1;
   opacity: 0.5;
-  transition: opacity 0.5s; /* Transition effect for opacity */
+  transition: opacity 0.5s;
   padding-right: 100px;
   /*background-color: red;*/
 }
 
+@media (max-width: 500px) {
+  .description {
+    padding-right: 0;
+  }
+}
 
 .descriptionAbout {
   text-align: left;
@@ -300,7 +288,7 @@
   padding-right: 100px;
   width: 50%;
   max-width: 500px;
-  min-width: 250px;
+  min-width: 20px;
   height: auto;
   /*background-color: purple;*/
 }
@@ -310,7 +298,7 @@
   padding-right: 50px;
   width: 50%;
   max-width: 400px;
-  min-width: 250px;
+  min-width: 20px;
   height: auto;
   /*background-color: purple;*/
 }
@@ -357,8 +345,24 @@ a.linkedin-link:visited {
 
 .Samuel-image
 {
-  /*padding-bottom: 300px;*/
   max-width: 50%;
   max-height: 50%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.page-slide-out {
+  animation: slideOut 0.5s forwards;
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0); 
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 

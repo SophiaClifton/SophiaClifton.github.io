@@ -1,0 +1,166 @@
+
+  
+  /* Website Sections*/
+  #Hackathons {
+      font-family: 'Montserrat', sans-serif;
+      text-align:center;
+      padding: 20px;
+      position: relative;
+      top: 200px;
+    }
+    
+    #Hackathons h1 {
+      font-size: 30px;
+      color: #333;
+      font-weight: bold;
+    }
+    
+  
+    #CTF {
+      font-family: 'Montserrat', sans-serif;
+      text-align:center;
+      padding: 20px;
+      position: relative;
+      top: 250px;
+    }
+    
+    #CTF h1 {
+      font-size: 26px;
+      color: #333;
+    }
+  
+    #Programming {
+      font-family: 'Montserrat', sans-serif;
+      text-align:center;
+      padding: 20px;
+      position: relative;
+      top: 270px;
+    }
+    
+    #Programming h1 {
+      font-size: 26px;
+      color: #333;
+    }
+
+
+  .descriptionComp {
+    text-align: left; 
+    margin: 0; 
+    flex:1;
+    padding-bottom: 50px;
+    font-size: 20px;
+    padding-right: 50px; 
+    /*background-color: red;*/
+}
+
+.extraInfo {
+  font-weight: bold;
+    width: 45%;
+    text-align: left; 
+    margin: 0; 
+    padding-top: 10px;
+    padding-bottom: 50px;
+    font-size: 20px;
+    position:center;
+    /*background-color: blue;  */
+}
+  
+  
+.image-descriptionComp .descriptionAbout {
+
+  text-align: left;
+  font-size: 20px;
+  padding-top: 50px;
+  flex: 1;
+  opacity: 0.5;
+  transition: opacity 0.5s;
+  padding-right: 100px;
+  /*background-color: red;*/
+}
+
+
+  @media (max-width: 500px) {
+  .image-descriptionComp .descriptionAbout {
+    padding-right: 0;
+  }
+}
+  
+  .Samuel-imageComp
+  {
+    max-width: 50%;
+    max-height: 50%;
+    overflow: hidden;
+  }
+  
+  .compInfo
+  {
+    text-align: left;
+  }
+  #header {
+    font-size: 56px;
+    color: #333;
+  }
+  .compInfo .name {
+    text-align: left;
+    margin: 0; 
+    flex:1;
+    font-size: 26px; 
+    color: #333;
+    font-weight: bold; 
+    margin-bottom: 0;
+}
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  max-width: 1700px; 
+  margin: 0 auto; 
+}
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  max-width: 1700px; 
+  margin: 0 auto; 
+}
+.container3 {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  max-width: 1700px; 
+  margin: 0 auto; 
+}
+.compInfo .awards{
+  text-align: left; 
+    margin: 0; 
+    flex:1;
+    font-size: 19px; 
+    color: #333; 
+    font-weight: bold; 
+    margin-bottom: 15px;}
+
+.image-descriptionComp {
+  display: flex;
+  position: center;
+}
+.container{
+  width:100%;
+  height: 100%;
+  min-width: 400px;
+}
+body {
+  overflow-x: hidden;
+}
+
+.page-slide-out2 {
+  animation: slideOut2 0.5s forwards;
+}
+
+@keyframes slideOut2 {
+  from {
+    transform: translateX(0); 
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
