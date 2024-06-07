@@ -1,12 +1,10 @@
-
-  
   /* Website Sections*/
   #Hackathons {
       font-family: 'Montserrat', sans-serif;
       text-align:center;
       padding: 20px;
       position: relative;
-      top: 200px;
+      padding-top: 100px;
     }
     
     #Hackathons h1 {
@@ -21,11 +19,11 @@
       text-align:center;
       padding: 20px;
       position: relative;
-      top: 250px;
+      padding-top: 30px;
     }
     
     #CTF h1 {
-      font-size: 26px;
+      font-size: 30px;
       color: #333;
     }
   
@@ -34,14 +32,14 @@
       text-align:center;
       padding: 20px;
       position: relative;
-      top: 270px;
+      padding-top: 30px;
     }
     
     #Programming h1 {
-      font-size: 26px;
+      font-size: 30px;
       color: #333;
     }
-
+    
 
   .descriptionComp {
     text-align: left; 
@@ -50,7 +48,7 @@
     padding-bottom: 50px;
     font-size: 20px;
     padding-right: 50px; 
-    /*background-color: red;*/
+    padding-left: 15px;
 }
 
 .extraInfo {
@@ -63,26 +61,6 @@
     font-size: 20px;
     position:center;
     /*background-color: blue;  */
-}
-  
-  
-.image-descriptionComp .descriptionAbout {
-
-  text-align: left;
-  font-size: 20px;
-  padding-top: 50px;
-  flex: 1;
-  opacity: 0.5;
-  transition: opacity 0.5s;
-  padding-right: 100px;
-  /*background-color: red;*/
-}
-
-
-  @media (max-width: 500px) {
-  .image-descriptionComp .descriptionAbout {
-    padding-right: 0;
-  }
 }
   
   .Samuel-imageComp
@@ -122,6 +100,7 @@
   align-items: center; 
   max-width: 1700px; 
   margin: 0 auto; 
+  padding-top: 20px;
 }
 .container3 {
   display: flex;
@@ -130,6 +109,8 @@
   max-width: 1700px; 
   margin: 0 auto; 
 }
+.container2 p {padding-left: 15px;}
+.container3 p {padding-left: 15px;}
 .compInfo .awards{
   text-align: left; 
     margin: 0; 
@@ -143,10 +124,12 @@
   display: flex;
   position: center;
 }
+
 .container{
   width:100%;
   height: 100%;
   min-width: 400px;
+  padding-bottom: 30px;
 }
 body {
   overflow-x: hidden;
