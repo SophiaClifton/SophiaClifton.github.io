@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('resize', updateBannerHeight);
     
     // Set banner height when the page loads
-    updateBannerHeight();
+    //updateBannerHeight();
     
     // Event handler to update banner height
     function updateBannerHeight() {
