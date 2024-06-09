@@ -120,13 +120,13 @@ document.addEventListener('DOMContentLoaded', function () {
     
         if (width <= 1097 && height <= 520) {
             banner.style.minHeight = '300px';
-            console.log("over 150%");
+            /*console.log("over 150%");*/
         } else if (width >= 5760 && height >= 2733) {
             banner.style.maxHeight = '300px';
-            console.log("under 30%");
+            /*console.log("under 30%");*/
         } else {
             banner.style.maxHeight = '300px'; // Default height
-            console.log("under 150%");
+            /*console.log("under 150%");*/
         }
     }
     
