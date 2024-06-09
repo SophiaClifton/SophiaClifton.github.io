@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const overlay = document.getElementById('overlay');
     const enlargedImage = document.getElementById('enlarged-image');
     const closeButton = document.getElementById('close-button');
-
+ 
     //image overlay
     galleryImages.forEach(image => {
         image.addEventListener('click', function () {
