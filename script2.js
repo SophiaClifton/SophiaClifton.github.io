@@ -103,32 +103,32 @@ document.addEventListener('DOMContentLoaded', function () {
             slidePage(url); 
         });
     });
-
+    
     //    I want to resize banner size in specific conditions
-    window.addEventListener('resize', updateBannerHeight);
-    
-    // Set banner height when the page loads
-    updateBannerHeight();
-    
-    // Event handler to update banner height
-    function updateBannerHeight() {
-        const width = window.innerWidth;
-        const height = window.innerHeight;
-    
-        // Get the banner element by its ID
-        const banner = document.getElementById('banner');
-    
-        if (width <= 1229 && height <= 556) {
-            banner.style.minHeight = '300px';
-            /*console.log("over 150%");*/
-        } else if (width >= 5760 && height >= 2733) {
-            banner.style.maxHeight = '300px';
-            /*console.log("under 30%");*/
-        } else {
-            banner.style.maxHeight = '300px'; // Default height
-            /*console.log("under 150%");*/
-        }
+window.addEventListener('resize', updateBannerHeight);
+
+// Set banner height when the page loads
+updateBannerHeight();
+
+// Event handler to update banner height
+function updateBannerHeight() {
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    // Get the banner element by its ID
+    const banner = document.getElementById('banner');
+
+    if (width <= 1097 && height <= 520) {
+        banner.style.minHeight = '300px';
+        /*console.log("over 150%");*/
+    } else if (width >= 5760 && height >= 2733) {
+        banner.style.maxHeight = '300px';
+        /*console.log("under 30%");*/
+    } else {
+        banner.style.maxHeight = '300px'; // Default height
+        /*console.log("under 150%");*/
     }
+}
 
 });
 
