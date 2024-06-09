@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('resize', updateBannerHeight);
     
     // Set banner height when the page loads
-    //updateBannerHeight();
+    updateBannerHeight();
     
     // Event handler to update banner height
     function updateBannerHeight() {
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Get the banner element by its ID
         const banner = document.getElementById('banner');
     
-        if (width <= 1097 && height <= 520) {
+        if (width <= 1229 && height <= 556) {
             banner.style.minHeight = '300px';
             /*console.log("over 150%");*/
         } else if (width >= 5760 && height >= 2733) {
