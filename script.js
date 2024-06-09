@@ -118,13 +118,17 @@ document.addEventListener('DOMContentLoaded', function () {
         // Get the banner element by its ID
         const banner = document.getElementById('banner');
     
-        if (width <= 1229 && height <= 556) {
+        if (width <= 700) {
+        banner.style.minHeight = '350px';
+        banner.style.minWidth = 'width';
+        /*console.log("phone");*/
+        }else if (width <= 2000) {
             banner.style.minHeight = '300px';
             /*console.log("over 150%");*/
-        } else if (width >= 5760 && height >= 2733) {
+        }else if (width >= 5760 ) {
             banner.style.maxHeight = '300px';
             /*console.log("under 30%");*/
-        } else {
+        }else {
             banner.style.maxHeight = '300px'; // Default height
             /*console.log("under 150%");*/
         }
