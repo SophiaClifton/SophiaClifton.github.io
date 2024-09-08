@@ -1,54 +1,54 @@
-  /* Website Sections*/
-  #Hackathons {
-      font-family: 'Montserrat', sans-serif;
-      text-align:center;
-      padding: 20px;
-      position: relative;
-      padding-top: 100px;
-    }
-    
-    #Hackathons h1 {
-      font-size: 30px;
-      color: #333;
-      font-weight: bold;
-    }
-    
+/* Website Sections*/
+#Hackathons {
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+    padding: 20px;
+    position: relative;
+    padding-top: 100px;
+  }
   
-    #CTF {
-      font-family: 'Montserrat', sans-serif;
-      text-align:center;
-      padding: 20px;
-      position: relative;
-      padding-top: 30px;
-    }
-    
-    #CTF h1 {
-      font-size: 30px;
-      color: #333;
-    }
-  
-    #Programming {
-      font-family: 'Montserrat', sans-serif;
-      text-align:center;
-      padding: 20px;
-      position: relative;
-      padding-top: 30px;
-    }
-    
-    #Programming h1 {
-      font-size: 30px;
-      color: #333;
-    }
-    
+#Hackathons h1 {
+  font-size: 30px;
+  color: #333;
+  font-weight: bold;
+}
 
-  .descriptionComp {
-    text-align: left; 
-    margin: 0; 
-    flex:1;
-    padding-bottom: 50px;
-    font-size: 20px;
-    padding-right: 50px; 
-    padding-left: 15px;
+
+#CTF {
+  font-family: 'Montserrat', sans-serif;
+  text-align:center;
+  padding: 20px;
+  position: relative;
+  padding-top: 30px;
+}
+
+#CTF h1 {
+  font-size: 30px;
+  color: #333;
+}
+
+#Programming {
+  font-family: 'Montserrat', sans-serif;
+  text-align:center;
+  padding: 20px;
+  position: relative;
+  padding-top: 0px;
+}
+
+#Programming h1 {
+  font-size: 30px;
+  color: #333;
+}
+  
+
+.descriptionComp {
+  text-align: left; 
+  margin: 0; 
+  flex:1;
+  padding-bottom: 50px;
+  font-size: 20px;
+  padding-right: 50px; 
+  padding-left: 15px;
 }
 
 .extraInfo {
@@ -61,30 +61,30 @@
     font-size: 20px;
     position:center; 
 }
-  
-  .Samuel-imageComp
-  {
-    max-width: 50%;
-    max-height: 50%;
-    overflow: hidden;
-  }
-  
-  .compInfo
-  {
-    text-align: left;
-  }
-  #header {
-    font-size: 56px;
-    color: #333;
-  }
-  .compInfo .name {
-    text-align: left;
-    margin: 0; 
-    flex:1;
-    font-size: 26px; 
-    color: #333;
-    font-weight: bold; 
-    margin-bottom: 0;
+
+.Samuel-imageComp
+{
+  max-width: 50%;
+  max-height: 50%;
+  overflow: hidden;
+}
+
+.compInfo
+{
+  text-align: left;
+}
+#header {
+  font-size: 56px;
+  color: #333;
+}
+.compInfo .name {
+  text-align: left;
+  margin: 0; 
+  flex:1;
+  font-size: 26px; 
+  color: #333;
+  font-weight: bold; 
+  margin-bottom: 0;
 }
 .container1 {
   display: flex;
@@ -117,30 +117,30 @@
       flex-direction: column;
       margin: 0; 
       padding-bottom: 0px;
-  }
-  
-  .compInfo .name {
-    padding-left: 0;
-  }
-  .compInfo .awards{
-    padding-left: 0;
-  }
-  .descriptionComp {
+}
+
+.compInfo .name {
+  padding-left: 0;
+}
+.compInfo .awards{
+  padding-left: 0;
+}
+.descriptionComp {
+  width: 100%;
+  padding-bottom: 0px;
+  font-size: 18px;
+  margin: 0; 
+  padding-right: 5px; 
+  padding-left: 5px;
+}
+.extraInfo {
     width: 100%;
-    padding-bottom: 20px;
+    padding: 0px;
     font-size: 18px;
     margin: 0; 
     padding-right: 5px; 
     padding-left: 5px;
-}
-  .extraInfo {
-      width: 100%;
-      padding: 0px;
-      font-size: 18px;
-      margin: 0; 
-      padding-right: 5px; 
-      padding-left: 5px;
-      padding-bottom: 20px;
+    padding-bottom: 0px;
   }
 }
 .compInfo .awards{

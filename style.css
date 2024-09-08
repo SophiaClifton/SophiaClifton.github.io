@@ -144,6 +144,7 @@
     padding: 20px;
     position: relative;
     padding-top: 30px;
+    padding-bottom:0px;
   }
   
   #About h1 {
@@ -373,3 +374,42 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .image-description {
+      flex-direction: column;
+  }
+
+  .image-galleryGames {
+      order: 1;
+      text-align: center;
+  }
+
+  .descriptionAbout {
+      order: 2;
+      padding:0;
+      margin:0;
+      width: 100%;
+      font-size: 18px;
+      text-align:center;
+  }
+
+  .about-image {
+    padding:0px;
+    width: 50%;
+    height:auto;
+    /*background-color: purple;*/
+  }
+
+  .description{
+    order:3;
+    padding-top:0;
+    font-size: 18px;
+  }
+  .game-image{
+    order:1;
+    width:100%;
+  }
+
+
+
+}
