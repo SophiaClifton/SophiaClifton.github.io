@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const src = this.getAttribute('src');
             enlargedImage.setAttribute('src', src);
             overlay.style.display = 'flex';
+            document.body.classList.add('no-scroll');
         });
     });
 
@@ -21,12 +22,14 @@ document.addEventListener('DOMContentLoaded', function () {
     closeButton.addEventListener('click', function (e) {
         e.stopPropagation(); // Prevent overlay click event from triggering
         overlay.style.display = 'none';
+        document.body.classList.remove('no-scroll');
     });
 
     // Add touch event for phone...
     closeButton.addEventListener('touchstart', function (e) {
         e.stopPropagation();
         overlay.style.display = 'none';
+        document.body.classList.remove('no-scroll');
     });
 
     // Function to handle scrolling to a section
