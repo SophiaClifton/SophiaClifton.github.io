@@ -103,8 +103,15 @@ document.addEventListener('DOMContentLoaded', function () {
             slidePage(url); 
         });
     });
-    
-    //    I want to resize banner size in specific conditions
+
+    $(document).ready(function() {
+        //when arrow of section is clicked reveal or hide
+        $(".section h1").click(function() {
+            $(this).next(".compInfo").toggleClass("open");
+        });
+    });
+      
+//I want to resize banner size in specific conditions
 window.addEventListener('resize', updateBannerHeight);
 
 // Set banner height when the page loads

@@ -5,12 +5,14 @@
     padding: 20px;
     position: relative;
     padding-top: 100px;
+    padding-bottom: 0px;
   }
   
 #Hackathons h1 {
   font-size: 30px;
   color: #333;
   font-weight: bold;
+  margin-bottom: 0px;
 }
 
 
@@ -19,12 +21,14 @@
   text-align:center;
   padding: 20px;
   position: relative;
-  padding-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 0px;
 }
 
 #CTF h1 {
   font-size: 30px;
   color: #333;
+  margin-bottom: 0px;
 }
 
 #Programming {
@@ -32,12 +36,14 @@
   text-align:center;
   padding: 20px;
   position: relative;
-  padding-top: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #Programming h1 {
   font-size: 30px;
   color: #333;
+  margin-bottom: 0px;
 }
   
 
@@ -71,8 +77,25 @@
 
 .compInfo
 {
+  display: none;
   text-align: left;
 }
+/*drop down arrow*/
+.arrow {
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+.arrow img {
+  width: 16px;  /*make arrow not huge*/
+  height: 16px; 
+  vertical-align: middle;  
+}
+
+.compInfo.open {
+  display: block;
+}
+
 #header {
   font-size: 56px;
   color: #333;
@@ -99,7 +122,7 @@
   align-items: center; 
   max-width: 1700px; 
   margin: 0 auto; 
-  padding-top: 20px;
+  padding-top: 30px;
 }
 .container3 {
   display: flex;
@@ -155,7 +178,6 @@
   .compInfo .awards{
     margin-bottom: 0px;
   }
-
 }
 
 .image-descriptionComp {
